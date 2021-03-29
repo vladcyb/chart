@@ -1,3 +1,8 @@
 .app {
+    padding: 20px;
+}
 
+.app__chartWrapper {
+    padding: 20px;
+    display: inline-block;
 }
