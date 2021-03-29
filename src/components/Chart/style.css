@@ -2,9 +2,5 @@
     border: 1px dashed gray;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-end;
-}
-
-.chart__line {
 }

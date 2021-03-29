@@ -6,6 +6,8 @@ type PropsType = {
   width: number
   height: number
   values: number[]
+  lineWidth?: number
+  evenly?: boolean
 }
 
 export const Chart = ({
@@ -13,10 +15,12 @@ export const Chart = ({
   height,
   width,
   color,
+  lineWidth,
+  evenly,
 }: PropsType) => {
   const maxValue = Math.max(...values);
   const percents = values.map((value) => value / maxValue * 100);
-  const lineWidth = Math.max(width / values.length - 20, 1);
+  const lWidth = lineWidth || Math.max(width / values.length - 20, 1);
 
   return (
     <div
@@ -24,13 +28,13 @@ export const Chart = ({
       style={{
         width,
         height,
+        justifyContent: evenly ? 'space-evenly' : 'space-between',
       }}
     >
       {percents.map((height, index) => (
         <div
-          className="chart__line"
           style={{
-            width: `${lineWidth}px`,
+            width: `${lWidth}px`,
             height: `${height}%`,
             background: color,
           }}

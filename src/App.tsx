@@ -16,7 +16,14 @@ export const App = () => {
         <Chart values={values1} width={200} height={200} color="#32a852" />
       </div>
       <div className="app__chartWrapper">
-        <Chart values={values1} width={400} height={200} color="#32a852" />
+        <Chart
+          values={values1}
+          width={200}
+          height={100}
+          color="#32a852"
+          lineWidth={30}
+          evenly
+        />
       </div>
       <div className="app__chartWrapper">
         <Chart values={values2} width={400} height={200} color="#32a892" />
@@ -29,6 +36,9 @@ export const App = () => {
       </div>
       <div className="app__chartWrapper">
         <Chart values={values3} width={200} height={100} color="#1e9461" />
+      </div>
+      <div className="app__chartWrapper">
+        <Chart values={values3} width={400} height={100} color="#1e9461" lineWidth={4} />
       </div>
     </div>
   );
