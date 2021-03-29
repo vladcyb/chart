@@ -22,11 +22,17 @@ export const App = () => {
           height={100}
           color="#32a852"
           lineWidth={30}
-          evenly
+          justifyContent="space-around"
         />
       </div>
       <div className="app__chartWrapper">
-        <Chart values={values2} width={400} height={200} color="#32a892" />
+        <Chart
+          values={values2}
+          width={400}
+          height={200}
+          color="#32a892"
+          justifyContent="space-evenly"
+        />
       </div>
       <div className="app__chartWrapper">
         <Chart values={values2} width={200} height={200} color="#33aab5" />
