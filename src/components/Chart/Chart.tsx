@@ -20,7 +20,7 @@ export const Chart = ({
 }: PropsType) => {
   const maxValue = Math.max(...values);
   const percents = values.map((value) => value / maxValue * 100);
-  const lWidth = lineWidth || Math.max(width / values.length - 20, 1);
+  const lWidth = lineWidth || width / values.length - 20;
 
   return (
     <div

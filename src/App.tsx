@@ -35,7 +35,7 @@ export const App = () => {
         <Chart values={values2} width={200} height={100} color="#33b546" />
       </div>
       <div className="app__chartWrapper">
-        <Chart values={values3} width={200} height={100} color="#1e9461" />
+        <Chart values={values3} width={200} height={100} color="#1e9461" lineWidth={1} />
       </div>
       <div className="app__chartWrapper">
         <Chart values={values3} width={400} height={100} color="#1e9461" lineWidth={4} />
